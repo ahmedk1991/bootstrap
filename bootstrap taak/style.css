@@ -1,54 +1,95 @@
-*{
-    margin:2px;
-    padding:2px;
+* {
+    padding: 2px;
 }
 
-.navbar-style{
-
-    box-shadow:0 5px 10px #efefef;
+.navbar-style {
+    box-shadow: 0 5px 10px #efefef;
     text-transform: uppercase;
     background: url('assets/5968949.jpg') center/cover no-repeat;
-   
 }
-.header{
 
-    height:100vh;
+.header {
+    height: 100vh;
+}
+
+.navbar-style .navbar-nav .nav-link {
+    color: rgb(218, 201, 109);
+    font-size:20px;
     
 }
-.logo{
-  height:80px;
-  padding:2px 10px;
+.logo {
+    height: 80px;
+    padding: 2px 10px;
 }
-.icon-bar{
-    background:rgb(219, 205, 125);
-}
-li a{
-    color: black;
-}
-.big-text{
-   font-size:40px;
-   color:rgb(219, 205, 125);
-}
-.row{
 
+.nav-link:hover{
+
+    border: 2px solid rgb(219, 205, 125);
+    border-radius: 20px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 2px 2px 3px rgb(163, 172, 147);
+    
+    
+    
+}
+
+
+.big-text {
+    font-size: 40px;
+    color: rgb(219, 205, 125);
+}
+
+.row {
     padding-top: 50px;
 }
-.click{
 
+.click {
     padding-top: 20px;
     font-size: 15px;
 }
-a.btn{
 
-    margin:30px 10px;
-    width:150px;
-    padding:10px;
+.btn {
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
     border-radius: 20px;
-    background-color:rgb(219, 205, 125); 
-    color:black;
+    background-color: rgb(219, 205, 125);
+   
 }
-a.btn:hover{
+
+.btn:hover {
     background: rgb(145, 131, 6);
-    box-shadow: 5px 5px 10px #36330152;
-    transition: 0.5s ease-in;
+    box-shadow: 5px 5px 10px #8d870d52;
+    transition: 0.3s ease-in;
 }
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .card img {
+      height: 11em;
+    }
+  }
